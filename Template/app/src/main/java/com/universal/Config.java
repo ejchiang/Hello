@@ -21,15 +21,15 @@ public class Config {
         
 		//DONT MODIFY ABOVE THIS LINE
 		
-		i.add(new NavItem("Section", NavItem.SECTION));
-        i.add(new NavItem("Uploaded Videos", R.drawable.ic_details, NavItem.ITEM, VideosFragment.class, "UU7V6hW6xqPAiUfataAZZtWA,UC7V6hW6xqPAiUfataAZZtWA"));
-        i.add(new NavItem("Liked Videos", R.drawable.ic_details, NavItem.ITEM, VideosFragment.class, "LL7V6hW6xqPAiUfataAZZtWA"));
+		i.add(new NavItem("Dashboard", NavItem.SECTION));
+        i.add(new NavItem("Home", R.drawable.ic_details, NavItem.ITEM, VideosFragment.class, "UU7V6hW6xqPAiUfataAZZtWA,UC7V6hW6xqPAiUfataAZZtWA"));
+        i.add(new NavItem("Find", R.drawable.ic_details, NavItem.ITEM, VideosFragment.class, "LL7V6hW6xqPAiUfataAZZtWA"));
         
-        i.add(new NavItem("News", R.drawable.ic_details, NavItem.ITEM, RssFragment.class, "http://feeds.feedburner.com/AndroidPolice"));
-        i.add(new NavItem("Tip Us", R.drawable.ic_details, NavItem.ITEM, WebviewFragment.class, "http://www.androidpolice.com/contact/"));
+        i.add(new NavItem("Sent", R.drawable.ic_details, NavItem.ITEM, RssFragment.class, "http://feeds.feedburner.com/AndroidPolice"));
+        i.add(new NavItem("Recieved", R.drawable.ic_details, NavItem.ITEM, WebviewFragment.class, "http://www.androidpolice.com/contact/"));
         
-        i.add(new NavItem("Recent Posts", R.drawable.ic_details, NavItem.ITEM, WordpressFragment.class, "http://androidpolice.com/api/"));
-        i.add(new NavItem("Cat: Conservation", R.drawable.ic_details, NavItem.ITEM, WordpressFragment.class, "http://moma.org/wp/inside_out/api/,conservation"));
+        i.add(new NavItem("Chat", R.drawable.ic_details, NavItem.ITEM, WordpressFragment.class, "http://androidpolice.com/api/"));
+        i.add(new NavItem("Rank", R.drawable.ic_details, NavItem.ITEM, WordpressFragment.class, "http://moma.org/wp/inside_out/api/,conservation"));
         
         i.add(new NavItem("Wallpaper Tumblr", R.drawable.ic_details, NavItem.ITEM, TumblrFragment.class, "androidbackgrounds"));
         
