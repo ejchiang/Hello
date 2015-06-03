@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="twitter">#34B2E7</color>
+    <color name="actionBarColor">#33b5e5</color>
+    
+    <!-- Android -->
+    <color name="myPrimaryColor">#4688F1</color>
+    <color name="myPrimaryDarkColor">#366AD3</color>
+    <color name="myAccentColor">#3F51B5</color>
+    <color name="myDrawerBackground">#F2F2F2</color>
+    <color name="myWindowBackground">#DEDEDE</color>
+    <color name="myTextPrimaryColor">#000000</color>
+    <color name="myNavigationColor">#000000</color>
+
+    <color name="selected_gray">#ffdbdbdb</color>
+    <color name="btnGray">#ffdbdbdb</color>
+    
+    <!-- Regular colors -->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#A9A9A9</color>
+    <color name="dim_gray">#696969</color>
+    <color name="light_gray">#BDBDBD</color>
+    <color name="dark_gray">#292929</color>
+    
+</resources>
