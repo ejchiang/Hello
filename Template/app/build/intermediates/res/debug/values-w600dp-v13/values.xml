@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/Users/usa/Desktop/Hello/Template/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values-w600dp/values.xml -->
+    <eat-comment/>
+    <dimen name="abc_search_view_text_min_width">192dip</dimen>
+    <!-- From: file:/C:/Users/usa/Desktop/Hello/Template/app/src/main/res/values-w600dp/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_detail_horizontal_margin">64dp</dimen>
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+    <dimen name="image_height_wordpress">300dp</dimen>
+    <dimen name="image_height_youtube">300dp</dimen>
+    <dimen name="preference_fragment_padding_side">64dp</dimen>
+    <!-- From: file:/C:/Users/usa/Desktop/Hello/Template/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values-w600dp/values.xml -->
+    <eat-comment/>
+    <integer name="abc_max_action_buttons">5</integer>
+</resources>
