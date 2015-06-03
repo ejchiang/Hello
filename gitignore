@@ -14,7 +14,7 @@ gen/
 
 # Gradle files
 .gradle/
-Template/build/
+Template/app/build/
 
 # Local configuration file (sdk path, etc)
 local.properties
@@ -25,4 +25,4 @@ proguard/
 # Log Files
 *.log
 
-Template/idea
+Template/.idea
