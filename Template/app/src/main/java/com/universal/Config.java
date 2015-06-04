@@ -23,7 +23,7 @@ public class Config {
 		
 		i.add(new NavItem("Dashboard", NavItem.SECTION));
         i.add(new NavItem("Home", R.drawable.ic_details, NavItem.ITEM, VideosFragment.class, "UU7V6hW6xqPAiUfataAZZtWA,UC7V6hW6xqPAiUfataAZZtWA"));
-        i.add(new NavItem("Find", R.drawable.ic_details, NavItem.ITEM, VideosFragment.class, "LL7V6hW6xqPAiUfataAZZtWA"));
+        i.add(new NavItem("Hey", R.drawable.ic_details, NavItem.ITEM, VideosFragment.class, "LL7V6hW6xqPAiUfataAZZtWA"));
         
         i.add(new NavItem("Sent", R.drawable.ic_details, NavItem.ITEM, RssFragment.class, "http://feeds.feedburner.com/AndroidPolice"));
         i.add(new NavItem("Recieved", R.drawable.ic_details, NavItem.ITEM, WebviewFragment.class, "http://www.androidpolice.com/contact/"));
@@ -31,14 +31,14 @@ public class Config {
         i.add(new NavItem("Chat", R.drawable.ic_details, NavItem.ITEM, WordpressFragment.class, "http://androidpolice.com/api/"));
         i.add(new NavItem("Rank", R.drawable.ic_details, NavItem.ITEM, WordpressFragment.class, "http://moma.org/wp/inside_out/api/,conservation"));
         
-        i.add(new NavItem("Wallpaper Tumblr", R.drawable.ic_details, NavItem.ITEM, TumblrFragment.class, "androidbackgrounds"));
+        i.add(new NavItem("My Profile", R.drawable.ic_details, NavItem.ITEM, TumblrFragment.class, "androidbackgrounds"));
         
         i.add(new NavItem("3FM Radio", R.drawable.ic_details, NavItem.ITEM, MediaFragment.class, "http://yp.shoutcast.com/sbin/tunein-station.m3u?id=709809"));
         i.add(new NavItem("Official Twitter", R.drawable.ic_details, NavItem.ITEM, TweetsFragment.class, "Android"));
         i.add(new NavItem("Maps", R.drawable.ic_details, NavItem.ITEM, MapsFragment.class, "drogisterij"));
-        
+
         //It's Suggested to not change the content below this line
-        
+
         i.add(new NavItem("Device", NavItem.SECTION));
         i.add(new NavItem("Favorites", R.drawable.ic_action_favorite, NavItem.EXTRA, FavFragment.class, null));
         i.add(new NavItem("Settings", R.drawable.ic_action_settings, NavItem.EXTRA, SettingsFragment.class, null));
