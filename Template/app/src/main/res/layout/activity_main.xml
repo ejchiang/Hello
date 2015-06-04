@@ -23,6 +23,13 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+            <TextView
+                android:layout_width="155dp"
+                android:layout_height="88dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Hello!"
+                android:id="@+id/textView"
+                android:layout_gravity="right" />
         </FrameLayout>
 
         <!-- android:layout_marginTop="?android:attr/actionBarSize"-->

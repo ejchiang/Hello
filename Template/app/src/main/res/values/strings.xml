@@ -28,7 +28,7 @@
     <string name="ad_off">2</string> <!-- This is GONE -->
     
     <!-- RSS Push Notification, we will check this feed for new articles and notify the user, frequency in min-->
-    <string name="rss_push_url"></string>
+    <string name="rss_push_url">http://myurl.com/feed/</string>
     <item type="integer" name="frequency">5</item>
     
     <!-- Layout -->
@@ -37,8 +37,8 @@
     <!-- about text, you can use basic html, stay between [ and ] -->
     <string name="about_text"><![CDATA[   
     <b>Version 1.0</b>
-    <br><br>Thank you for downloading.<br><br>
-    <i>By SexySix;</i>
+    <br><br>Brought to you by Edward Chiang and Max Shen.<br><br>
+    <i>By the Sexy Six</i>
     ]]></string>
     
     <!-- Map settings -->

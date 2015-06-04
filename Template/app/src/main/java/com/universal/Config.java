@@ -25,8 +25,8 @@ public class Config {
         i.add(new NavItem("Home", R.drawable.ic_details, NavItem.ITEM, VideosFragment.class, "UU7V6hW6xqPAiUfataAZZtWA,UC7V6hW6xqPAiUfataAZZtWA"));
         i.add(new NavItem("Hey", R.drawable.ic_details, NavItem.ITEM, VideosFragment.class, "LL7V6hW6xqPAiUfataAZZtWA"));
         
-        i.add(new NavItem("Sent", R.drawable.ic_details, NavItem.ITEM, RssFragment.class, "http://feeds.feedburner.com/AndroidPolice"));
-        i.add(new NavItem("Recieved", R.drawable.ic_details, NavItem.ITEM, WebviewFragment.class, "http://www.androidpolice.com/contact/"));
+        i.add(new NavItem("Sent", R.drawable.ic_details, NavItem.ITEM, RssFragment.class, ""));
+        i.add(new NavItem("Recieved", R.drawable.ic_details, NavItem.ITEM, WebviewFragment.class, "http://facebook.com"));
         
         i.add(new NavItem("Chat", R.drawable.ic_details, NavItem.ITEM, WordpressFragment.class, "http://androidpolice.com/api/"));
         i.add(new NavItem("Rank", R.drawable.ic_details, NavItem.ITEM, WordpressFragment.class, "http://moma.org/wp/inside_out/api/,conservation"));
