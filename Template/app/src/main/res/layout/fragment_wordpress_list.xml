@@ -16,13 +16,22 @@
 
     <ListView
         android:id="@+id/custom_list"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
         android:divider="@null"
         style="@style/listStyleNoHighlight"
         android:focusable="false"
         android:visibility="gone" />
-    
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/textView5"
+        android:layout_gravity="bottom"
+        android:paddingTop="200dp"/>
+
     <include
         android:id="@+id/progressBarHolder"
         layout="@layout/listview_loading"/>

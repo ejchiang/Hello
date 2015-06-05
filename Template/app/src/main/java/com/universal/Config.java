@@ -26,14 +26,13 @@ public class Config {
         i.add(new NavItem("Hey", R.drawable.ic_details, NavItem.ITEM, VideosFragment.class, "LL7V6hW6xqPAiUfataAZZtWA"));
         
         i.add(new NavItem("Sent", R.drawable.ic_details, NavItem.ITEM, RssFragment.class, ""));
-        i.add(new NavItem("Recieved", R.drawable.ic_details, NavItem.ITEM, WebviewFragment.class, "http://facebook.com"));
+        i.add(new NavItem("Received", R.drawable.ic_details, NavItem.ITEM, WebviewFragment.class, ""));
         
-        i.add(new NavItem("Chat", R.drawable.ic_details, NavItem.ITEM, WordpressFragment.class, "http://androidpolice.com/api/"));
-        i.add(new NavItem("Rank", R.drawable.ic_details, NavItem.ITEM, WordpressFragment.class, "http://moma.org/wp/inside_out/api/,conservation"));
+        i.add(new NavItem("Chat", R.drawable.ic_details, NavItem.ITEM, WordpressFragment.class, ""));
         
-        i.add(new NavItem("My Profile", R.drawable.ic_details, NavItem.ITEM, TumblrFragment.class, "androidbackgrounds"));
+        i.add(new NavItem("Rank", R.drawable.ic_details, NavItem.ITEM, TumblrFragment.class, ""));
         
-        i.add(new NavItem("3FM Radio", R.drawable.ic_details, NavItem.ITEM, MediaFragment.class, "http://yp.shoutcast.com/sbin/tunein-station.m3u?id=709809"));
+        i.add(new NavItem("My Profile", R.drawable.ic_details, NavItem.ITEM, MediaFragment.class, "http://yp.shoutcast.com/sbin/tunein-station.m3u?id=709809"));
         i.add(new NavItem("Official Twitter", R.drawable.ic_details, NavItem.ITEM, TweetsFragment.class, "Android"));
         i.add(new NavItem("Maps", R.drawable.ic_details, NavItem.ITEM, MapsFragment.class, "drogisterij"));
 

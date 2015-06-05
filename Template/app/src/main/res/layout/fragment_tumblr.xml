@@ -37,5 +37,15 @@
 	
 	<include
         android:id="@+id/progressBarHolder"
-        layout="@layout/listview_loading"/>
+        layout="@layout/listview_loading"
+        android:layout_height="211dp"
+        android:layout_width="96dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/textView6"
+        android:layout_weight="0" />
 </LinearLayout>
