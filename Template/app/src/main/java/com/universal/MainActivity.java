@@ -11,6 +11,9 @@ import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+
 import com.universal.R;
 import com.universal.rss.ServiceStarter;
 import com.universal.web.WebviewFragment;
@@ -25,11 +28,19 @@ public class MainActivity extends ActionBarActivity implements NavDrawerCallback
     SharedPreferences prefs;
     String mWebUrl = null;
     boolean openedByBackPress = false;
-	
-    @Override
+
+
+        @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        
+        setContentView(R.layout.fragment_webview);
+
+        String[] recieved = {"recieved", "info", "I", "Hope", "This", "works"};
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, recieved);
+
+        ListView listView = (ListView)findViewById(R.id.listView);
+        listView.setAdapter(adapter);
+
         boolean newDrawer = getResources().getBoolean(R.bool.newdrawer);
         
         if (newDrawer == true){
@@ -46,7 +57,7 @@ public class MainActivity extends ActionBarActivity implements NavDrawerCallback
         mNavigationDrawerFragment = (NavDrawerFragment) getSupportFragmentManager().findFragmentById(R.id.fragment_drawer);
         
         if (newDrawer == true){
-        	 mNavigationDrawerFragment.setup(R.id.scrimInsetsFrameLayout, (DrawerLayout) findViewById(R.id.drawer), mToolbar);
+        	 mNavigationDrawerFragment.setup(R.id.fragment_drawer, (DrawerLayout) findViewById(R.id.drawer), mToolbar);
              mNavigationDrawerFragment.getDrawerLayout().setStatusBarBackgroundColor(
                      getResources().getColor(R.color.myPrimaryDarkColor));
         } else {
@@ -55,7 +66,7 @@ public class MainActivity extends ActionBarActivity implements NavDrawerCallback
         
         prefs = PreferenceManager
         	    .getDefaultSharedPreferences(getBaseContext());
-        
+
         //setting push enabled
         String push = getString(R.string.rss_push_url);
         if (null != push && !push.equals("")){
