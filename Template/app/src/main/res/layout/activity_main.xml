@@ -6,7 +6,11 @@
     android:layout_height="match_parent"
     android:background="#125688">
 
-
+    <include
+        android:id="@+id/toolbar_actionbar"
+        layout="@layout/toolbar_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
     <android.support.v4.widget.DrawerLayout
         android:id="@+id/drawer"
