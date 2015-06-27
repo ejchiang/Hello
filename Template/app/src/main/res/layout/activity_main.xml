@@ -40,7 +40,6 @@
                 android:id="@+id/editText"
                 android:layout_gravity="bottom|center_horizontal"
                 android:text="Give and receive compliments from those around you."
-                android:
                 android:gravity="center_horizontal"
                 android:textColor="@color/abc_background_cache_hint_selector_material_light"
                 android:textSize="18sp" />
