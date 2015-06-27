@@ -1,59 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.DrawerLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/drawer"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true" >
+    android:background="#125688">
 
-    <LinearLayout
+
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer"
+        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <include
-            android:id="@+id/toolbar_actionbar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            layout="@layout/toolbar_default" />
+        android:layout_height="400dp"
+        android:layout_below="@+id/toolbar_actionbar">
 
         <FrameLayout
             android:id="@+id/container"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-        <TextView
-            android:layout_width="155dp"
-            android:layout_height="88dp"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Hello!"
-            android:id="@+id/textView"
-            android:layout_gravity="center" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="hello"
+                android:id="@+id/textView"
+                android:layout_gravity="center"
+                android:textSize="64sp"
+                android:typeface="normal"
+                android:textColor="@color/abc_background_cache_hint_selector_material_light"
+                android:focusable="true"
+                android:textStyle="italic"
+                />
+
+            <TextView
+                android:layout_width="269dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText"
+                android:layout_gravity="bottom|center_horizontal"
+                android:text="Give and receive compliments from those around you."
+                android:
+                android:gravity="center_horizontal"
+                android:textColor="@color/abc_background_cache_hint_selector_material_light"
+                android:textSize="18sp" />
         </FrameLayout>
-    </LinearLayout>
 
+        <!-- android:layout_marginTop="?android:attr/actionBarSize"-->
+        <fragment
+            android:id="@+id/fragment_drawer"
+            android:name="com.universal.NavDrawerFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:layout="@layout/drawer_fragment"/>
+    </android.support.v4.widget.DrawerLayout>
 
-    <com.universal.util.ScrimInsetsFrameLayout
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/scrimInsetsFrameLayout"
+    <Button
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        android:background="@color/white"
-        android:elevation="10dp"
-        android:fitsSystemWindows="true"
-        app:insetForeground="#4000" >
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="56dp"
+        android:padding="20dp"/>
 
-            <fragment
-                android:id="@+id/fragment_drawer"
-                android:name="com.universal.NavDrawerFragment"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="start"
-                app:layout="@layout/drawer_fragment"
-                tools:layout="@layout/activity_main" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="56dp"
+        android:padding="20dp"/>
 
-    </com.universal.util.ScrimInsetsFrameLayout>
 
-</android.support.v4.widget.DrawerLayout>
+</RelativeLayout>
